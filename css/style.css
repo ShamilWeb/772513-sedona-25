@@ -1,0 +1,303 @@
+body {
+  font-family: 'PT Sans', Arial sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: #f2f2f2;
+  text-align: center;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section:not(.advantages .hotel-search) p {
+  color: #333333;
+  line-height: 1.5;
+}
+
+.advantages-items li {
+  color: #333333;
+  line-height: 1.5;
+}
+
+.advantages-items li:nth-last-child(n+4) {
+  color: #ffffff;
+}
+
+.advantages-items h3:not(.not-black) {
+  color: #000000;
+}
+
+.advantages h2 {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 56px;
+}
+
+.main h3,
+.main h1 {
+  font-size: 21px;
+  line-height: 1.24;
+}
+
+.hotel-search p {
+  line-height: 1.71;
+  color: #333333;
+  margin-top: 25px;
+  margin-bottom: 48px;
+}
+
+.advantages-items li:nth-last-child(n+4) {
+  color: #ffffff;
+}
+
+.hotel-search span {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotel-search button {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  width: 568px;
+  height: 86px;
+  text-transform: uppercase;
+  background: #766357;
+}
+
+.header li,
+.main li,
+.footer li {
+  list-style-type: none;
+}
+
+.header ul,
+.main ul,
+.footer ul {
+  padding: 0;
+}
+
+.header-nav a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+}
+
+.header-nav li {
+  width: 239px;
+  text-align: center;
+}
+
+.header-nav li:nth-child(2) {
+  margin-right: auto;
+}
+
+.header,
+.main,
+.footer {
+  width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2)
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.welcome {
+  height: 509px;
+  background:
+    url(../img/polygon.svg) 0 bottom no-repeat,
+    url(../img/welcome.svg) 50% 48% no-repeat,
+    url(../img/background-photo.png) 0 -83px no-repeat;
+  background-size: auto, 458px, cover;
+  margin-bottom: 58px;
+}
+
+.main h1 {
+  width: 440px;
+  margin: auto;
+  margin-bottom: 34px;
+}
+
+.advantages {
+  margin-bottom: 51px;
+}
+
+.advantages-item div {
+  width: 400px;
+  background-color: #81b3d2;
+  padding: 45px 0 60px;
+}
+
+.advantages-items li:nth-child(n+3) {
+  width: 400px;
+  background-color: #eeeeee;
+  padding: 45px 0 60px;
+}
+
+.advantages-items h3 {
+  width: 151px;
+  margin: auto;
+  line-height: 21px;
+}
+
+.advantages-items p {
+  width: 270px;
+  margin: auto;
+}
+
+.advantages-item2 p,
+.advantages-item1 p {
+  width: 305px;
+}
+
+.advantages-item5 p {
+  width: 250px;
+}
+
+.advantages-items span {
+  display: block;
+  padding: 25px 0 22px;
+}
+
+.advantages-items span::before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 5px;
+  width: 10px;
+  border-top: 1px solid #333333;
+}
+
+.advantages-items span::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  width: 8px;
+  border-top: 1px solid #333333;
+}
+
+.advantages-item1 {
+  display: flex;
+  margin-bottom: 330px;
+}
+
+.advantages-item2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantages-items {
+  height: 1098px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommend {
+  position: absolute;
+  top: 1036px;
+}
+
+.recommend-items {
+  display: flex;
+  margin: 0;
+}
+
+.recommend-items p {
+  margin: auto;
+  width: 285px;
+}
+
+.recommend-items li {
+  width: 400px;
+  min-height: 330px;
+  box-sizing: border-box;
+}
+
+.recommend-items li:first-child {
+  background: url(../img/icon-1.svg) 50% 60px no-repeat;
+}
+
+.recommend-items li:nth-child(2) {
+  background: url(../img/icon-3.svg) 50% 60px no-repeat;
+}
+
+.recommend-items li:last-child {
+  background: url(../img/icon-2.svg) 50% 56px no-repeat;
+}
+
+.recommend h3 {
+  margin-top: 158px;
+  margin-bottom: 23px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+  display: flex;
+  min-height: 125px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 101px 0 132px;
+  opacity: 0.9;
+}
+
+.footer span:first-child {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer p:last-child {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 228px 0 256px;
+}
+
+.footer-items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
