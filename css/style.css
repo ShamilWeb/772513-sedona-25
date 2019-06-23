@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans", Arial sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -23,7 +23,7 @@ a {
   overflow: hidden;
 }
 
-.redefinition ul {
+.redefinition ul:not(.header-nav):not(.footer-items) {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -33,12 +33,7 @@ a {
   position: relative;
 }
 
-section:not(.advantages .hotel-search) p {
-  color: #333333;
-  line-height: 1.5;
-}
-
-.advantages-items li {
+.advantages-items2 li.advantages-items {
   color: #333333;
   line-height: 1.5;
 }
@@ -99,7 +94,7 @@ section:not(.advantages .hotel-search) p {
   list-style-type: none;
 }
 
-.header ul,
+.header ul:not(.header-nav),
 .main ul,
 .footer ul {
   padding: 0;
@@ -139,7 +134,7 @@ section:not(.advantages .hotel-search) p {
   align-items: center;
   height: 56px;
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
 }
 
 .header-nav li {
@@ -205,7 +200,7 @@ section:not(.advantages .hotel-search) p {
   padding: 45px 0 60px;
 }
 
-.advantages-items li:nth-child(n+3) {
+.advantages-items2 li:nth-child(n+6) {
   width: 400px;
   background-color: #eeeeee;
   padding: 45px 0 60px;
@@ -267,7 +262,6 @@ section:not(.advantages .hotel-search) p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 330px;
 }
 
 .advantages-item2 {
@@ -280,8 +274,8 @@ section:not(.advantages .hotel-search) p {
   flex-direction: row-reverse;
 }
 
-.advantages-items {
-  height: 1098px;
+.advantages-items2 {
+  min-height: 1098px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,12 +283,11 @@ section:not(.advantages .hotel-search) p {
   flex-wrap: wrap;
 }
 
-.recommend {
-  position: absolute;
-  top: 1036px;
+.wrapper2 span:last-child {
+  color: #333333;
 }
 
-.recommend-items {
+.recommend-items2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,34 +297,37 @@ section:not(.advantages .hotel-search) p {
 .recommend-items p {
   margin: auto;
   width: 285px;
+  color: #333333;
+  line-height: 1.5;
 }
 
-.recommend-items li {
+.recommend-items2 li.recommend-items {
   width: 400px;
   min-height: 330px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.recommend-items li:first-child {
+.recommend-items2 li.recommend-items:nth-of-type(2) {
   background: url(../img/icon-1.svg) 50% 60px no-repeat;
 }
 
-.recommend-items li:nth-child(2) {
+.recommend-items2 li.recommend-items:nth-of-type(3){
   background: url(../img/icon-3.svg) 50% 60px no-repeat;
 }
 
-.recommend-items li:last-child {
+.recommend-items2 li.recommend-items:nth-of-type(4) {
   background: url(../img/icon-2.svg) 50% 56px no-repeat;
 }
 
-.recommend h3 {
+.recommend-items h3 {
   margin-top: 158px;
   margin-bottom: 23px;
 }
 
-.advantages-items li:nth-last-child(n+4) {
+.advantages-items2 li.advantages-items:nth-last-child(n+4) {
   color: #ffffff;
+  width: 100%;
 }
 
 .footer {
@@ -384,6 +380,12 @@ section:not(.advantages .hotel-search) p {
   justify-content: space-between;
   width: 150px;
   margin: 0 228px 0 256px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-items li:nth-child(n+4) {
+  margin-top: 5px;
 }
 
 .footer-items a {
@@ -406,7 +408,7 @@ section:not(.advantages .hotel-search) p {
   background-color: #669ec0;
 }
 
-.footer-items a:active {
+.footer-items-a:active {
   background-color: #5496bd;
 }
 
@@ -504,6 +506,7 @@ section:not(.advantages .hotel-search) p {
 
 .sorting .active2 {
   color: #81b3d2;
+  border: none;
 }
 
 .sorting polygon:focus,
@@ -560,7 +563,7 @@ section:not(.advantages .hotel-search) p {
   -ms-flex-align: center;
   align-items: center;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #f2f2f2;
   color: #666666;
 }
@@ -568,26 +571,26 @@ section:not(.advantages .hotel-search) p {
 .hotels-items>li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 151px;
+  min-height: 151px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #e5e5e5;
   padding: 0 72px;
   text-align: left;
 }
 
 .hotels-items>li:last-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels>span {
   display: block;
-  height: 86px;
+  min-height: 86px;
   text-align: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -598,7 +601,7 @@ section:not(.advantages .hotel-search) p {
 
 .hotels .wrapper {
   width: 259px;
-  height: 90px;
+  min-height: 90px;
   margin-left: 30px;
   margin-right: auto;
 }
@@ -665,7 +668,7 @@ section:not(.advantages .hotel-search) p {
   color: #ffffff;
   font-weight: bold;
   padding: 0 17px;
-  height: 27px;
+  min-height: 27px;
   background-color: #81b3d2;
 }
 
@@ -743,6 +746,10 @@ section:not(.advantages .hotel-search) p {
 .input-checkbox:checked+span {
   width: 27px;
   background: url(../img/checkbox-on.svg);
+}
+
+.input-checkbox:focus+span {
+  box-shadow: -4px 0 5px 0px #000000;
 }
 
 .fieldset3-wrapper {
@@ -827,7 +834,7 @@ section:not(.advantages .hotel-search) p {
   background-color: transparent;
   color: #ffffff;
   width: 137px;
-  height: 35px;
+  min-height: 35px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   margin-left: -7px;
@@ -908,7 +915,7 @@ section:not(.advantages .hotel-search) p {
 
 .input-back:focus {
   background-color: #ffffff;
-  border: solid 2px #e5e5e5;
+  outline: solid 2px #e5e5e5;
 }
 
 .popup-form>label {
@@ -1168,4 +1175,29 @@ section:not(.advantages .hotel-search) p {
 
 .input-back::placeholder {
   color: #000000;
+}
+
+.input-checkbox[disabled]+span {
+  background: url(../img/checkbox-off-3.svg)
+}
+
+.input-checkbox[disabled]:checked+span {
+  background: url(../img/checkbox-on-2.svg)
+}
+
+.header-nav li:nth-child(n+3) {
+  text-align: right;
+}
+
+.header-nav li:nth-last-child(n+3) {
+  text-align: left;
+}
+
+.sorting a[aria-label="верх"] {
+  margin-left: auto;
+}
+
+.width {
+  display: inline-block;
+  width: 150px;
 }
