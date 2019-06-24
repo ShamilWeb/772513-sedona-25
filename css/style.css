@@ -23,7 +23,7 @@ a {
   overflow: hidden;
 }
 
-.redefinition ul:not(.header-nav):not(.footer-items) {
+.redefinition ul:not(.header-nav):not(.footer-items):not(.sorting-items) {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -338,7 +338,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 125px;
+  min-height: 125px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -408,11 +408,11 @@ a {
   background-color: #669ec0;
 }
 
-.footer-items-a:active {
+.footer-items a:active {
   background-color: #5496bd;
 }
 
-.footer-items a:active path {
+.footer-item-a:active path {
   opacity: 0.3;
 }
 
@@ -459,14 +459,12 @@ a {
 }
 
 .sorting {
-  position: absolute;
   width: 891px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   font-size: 12px;
-  margin-left: 236px;
-  margin-top: 38px;
+  margin-left: 10px;
 }
 
 .sorting>a:last-child {
@@ -479,10 +477,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 700px;
+  margin-top: -3px;
 }
 
-.sorting-items li:nth-child(2) {
-  margin: 0 33px;
+.sorting-items li {
+  margin: 0;
+  margin-right: 33px;
+  line-height: 20px;
 }
 
 .sorting .sorting-items {
@@ -588,7 +592,7 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotels>span {
+.hotels>div {
   display: block;
   min-height: 86px;
   text-align: left;
@@ -658,7 +662,7 @@ a {
   color: #666666;
 }
 
-.hotels a:not(.title) {
+.hotels a:not(.title):not(.sorting-a) {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -672,30 +676,30 @@ a {
   background-color: #81b3d2;
 }
 
-.hotels a:not(.title):focus,
-.hotels a:not(.title):hover {
+.hotels a:not(.title):not(.sorting-a):focus,
+.hotels a:not(.title):not(.sorting-a):hover {
   background-color: #669ec0;
 }
 
-.hotels a:not(.title):active {
+.hotels a:not(.title):not(.sorting-a):active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotels a:not(.title):nth-of-type(1) {
+.hotels a:not(.title):not(.sorting-a):nth-of-type(1) {
   margin-right: 6px;
 }
 
-.hotels a:not(.title):last-child {
+.hotels a:not(.title):not(.sorting-a):last-child {
   background-color: #766357;
 }
 
-.hotels a:not(.title):last-child:focus,
-.hotels a:not(.title):last-child:hover {
+.hotels a:not(.title):not(.sorting-a):last-child:focus,
+.hotels a:not(.title):not(.sorting-a):last-child:hover {
   background-color: #604e43;
 }
 
-.hotels a:not(.title):last-child:active {
+.hotels a:not(.title):not(.sorting-a):last-child:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
